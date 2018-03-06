@@ -46,21 +46,58 @@
 
 .block-cart-header .summary
 {
-    padding-top: 28px;
-    color:#111;
+    padding: 0;
+    color:#fff;
+    position: relative;
+    display: block;
+    float: none;
+    font-size: 20px;
+    font-weight:normal;
+    text-align: center;
+}
+.block-cart-header
+{
+    cursor: none;
+    padding-top: 5px;
+    background: none;
+    height: 30px;
+    width:auto;
+
+}
+.block-cart-header .block-content
+{
+    cursor: pointer;
+}
+.block-cart-header .block-content span.product-count
+{
+    position: absolute;
+    top: -8px;
+    background: #38b54b;
+    right: -12px;
+    font-size: 15px;
+    border-radius: 3px;
+    width: 15px;
+}
+.block-cart-header .cart-content{
+    box-shadow: 0 0px 13px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0px 13px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0px 13px rgba(0,0,0,0.15);
+    position:absolute;
+    right:0;
+    top: 27px;
+    z-index:9;
+    min-width:320px;
+    width: 100%;
+    display:none;
+    cursor:default;
 }
 @media only screen and (min-width: 768px) {
     .block-cart-header {
         position: relative;
         float: right;
-        margin-left: 28px;
-        margin-top: 0px;
-        margin-bottom: 5px;
-        background: url(../images/icons8-shopping-bag-100-white.png) no-repeat;
-        background-size: 60px;
-        width: 60px;
-        height: 60px;
-        bottom: 5px;
+        padding-top: 5px;
+        background: none;
+
     }
     .block-cart-header:before {
         display: none;
@@ -72,7 +109,12 @@
     }
 
 }
-
+.block-cart-header .empty .cart-content {
+    background: #fff;
+    padding: 10px;
+    max-width: 320px;
+    color:#000;
+}
 .header-info i {
     color: #fff;
     font-size: 24px;
@@ -86,6 +128,19 @@
 {
     width: 230px;
 }
+@media only screen and (max-width: 767px){
+    .header .form-search .input-text {
+        width:100%;
+        margin:0;
+        moz-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: none;
+        padding-right: 50px;
+    }
+}
+
 
 /** Mega menu **/
 .grid-full > li > a:before

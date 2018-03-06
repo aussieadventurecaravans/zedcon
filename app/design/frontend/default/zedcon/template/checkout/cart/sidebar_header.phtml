@@ -40,9 +40,9 @@
     <?php if ($_cartQty>0): ?>
         <div class="summary">
             <?php if ($_cartQty==1): ?>
-                <p><?php echo $this->__('<strong title="%s">%s</strong>', $this->getUrl('checkout/cart'), $_cartQty) ?></p>
+                <p><i class="fa" style="font-size:24px;color:#fff">&#xf07a;</i><?php echo $this->__('<span title="%s" class="product-count">%s</span>', $this->getUrl('checkout/cart'), $_cartQty) ?></p>
             <?php else: ?>
-                <p><?php echo $this->__('<strong title="%s">%s</strong>', $this->getUrl('checkout/cart'), $_cartQty) ?></p>
+                <p><i class="fa" style="font-size:24px;color:#fff">&#xf07a;</i><?php echo $this->__('<span title="%s" class="product-count">%s</span>', $this->getUrl('checkout/cart'), $_cartQty) ?></p>
             <?php endif ?>
         </div>
             <div class="cart-content">
@@ -80,7 +80,7 @@
             <p class="mini-cart"><?php echo $this->__('<strong title="%s">%s</strong>', $this->getUrl('checkout/cart'), $_cartQty) ?> </p>
     <?php else: ?>
         <div class="empty">
-            <div class="summary"><?php echo $this->__('0') ?> </div>
+            <div class="summary"><span><i class="fa" style="font-size:20px;color:#fff">&#xf07a;</i></div>
             <div class="cart-content">
                 <?php echo $this->__('You have no items in your shopping cart.') ?>
             </div>
