@@ -223,7 +223,11 @@
 .products-grid .product-name a:hover, .products-list .product-name a:hover {
     color: #38b54b;
 }
-
+.page-title, .category-title {
+    margin: 0 0 40px;
+    border-bottom: 7px solid #38b54b;
+    padding-bottom: 10px;
+}
 
 /** Video Banner **/
 
