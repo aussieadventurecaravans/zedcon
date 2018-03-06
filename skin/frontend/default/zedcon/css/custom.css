@@ -138,6 +138,17 @@
     background: #fff;
     border-bottom: 7px solid #38b54b;
 }
+@media only screen and (max-width: 991px) {
+    .nav-container {display: none;}
+    .nav-container-mobile {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: auto;
+    }
+}
 
 .grid-full > li > .level-top
 {
@@ -185,4 +196,84 @@
     font-size: 20px;
     height: 100%;
     padding: 10px 0;
+}
+
+/** New Product / Featured Product template **/
+.img-hover:after{
+    background: #38b54b;
+}
+.homeIndent .carousel-prev, .homeIndent .carousel-prev2, .homeIndent .carousel-prev3, .homeIndent .carousel-next, .homeIndent .carousel-next2, .homeIndent .carousel-next3 {
+    top: 0;
+    right: 0;
+    position: relative;
+    background: #38b54b;
+    color: #fff;
+    width: 37px;
+    height: 37px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 37px;
+    float: left;
+    margin-left: 3px;
+}
+.col-main .regular-price .price,
+.col-main .price-box.map-info .old-price .price,
+#tabquickshowcontainer .regular-price .price {font-size: 22px; color: #38b54b; line-height: 22px;}
+
+.products-grid .product-name a:hover, .products-list .product-name a:hover {
+    color: #38b54b;
+}
+
+
+/** Video Banner **/
+
+button.btn-row > span {
+    font-size: 25px;
+    background: #38b54b;
+}
+.desc-row {
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 28px;
+    color: #38b54b;
+    text-transform: uppercase;
+}
+
+button.btn-row > span:after {
+    background: #000;
+}
+
+/** footer template **/
+.footer-container
+{
+    background: #000;
+    color: #fff;
+}
+.footer ul li a {
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    color: #38b54b;
+}
+
+.footer h4, .footer .block-title strong {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #38b54b;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+
+.footer .footer-col .tel {
+    display: block;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: bold;
 }
