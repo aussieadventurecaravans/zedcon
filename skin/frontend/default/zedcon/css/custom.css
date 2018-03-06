@@ -302,6 +302,20 @@ button.btn-row > span:after {
     background: #000;
 }
 
+.box-1 {
+    position: relative;
+    left:0;
+    padding: 12% 0 17%;
+    margin-bottom: 60px;
+    z-index: 0;
+    background: none;
+    background-size: cover;
+}
+.box-1  video{
+    width:100%;
+}
+
+
 /** footer template **/
 .footer-container
 {
