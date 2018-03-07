@@ -133,7 +133,11 @@ Default layout, loads most of the pages
                     <action method="setElementClass"><value>top-container</value></action>
                 </block>
                 <block type="page/html_welcome" name="welcome" as="welcome"/>
-                <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/>
+                <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml">
+                    <block type="sales/guest_links" name="return_link"/>
+                    <action method="addLinkBlock"><blockName>return_link</blockName></action>
+                    <action method="addLink" translate="label title" module="contacts" ifconfig="contacts/contacts/enabled"><label>Contact Us</label><url>contacts</url><title>Contact Us</title><prepare>true</prepare></action>
+                </block>
             </block>
 
             <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
