@@ -288,6 +288,11 @@
     padding-bottom: 10px;
 }
 
+
+.product-shop button.button:hover > span:after {
+    background: none repeat scroll 0 0 #38b54b;
+}
+
 /** Video Banner **/
 
 button.btn-row > span {
@@ -447,7 +452,23 @@ button.btn-row > span:after {
     width: 59px;
     height: 35px;
     line-height: 18px;
-    background: none repeat scroll 0 0 #000000;
+    background: none repeat scroll 0 0 #188028;
+}
+.footer .block-subscribe button.button:hover > span {
+    color: #fff;
+    background: #000;
+}
+.footer .block-subscribe button.button:hover span:after
+{
+    background:none;
+}
+.validation-advice {
+    clear: both;
+    min-height: 13px;
+    margin: 3px 0 0;
+    font-size: 11px;
+    line-height: 13px;
+    color: #fff;
 }
 .footer-top {
     margin: 0 -10000px;
@@ -455,4 +476,8 @@ button.btn-row > span:after {
     position: relative;
     background: #38b54b;
     overflow: hidden;
+}
+
+.footer .list-icon li a:hover {
+    color: #188028;
 }
