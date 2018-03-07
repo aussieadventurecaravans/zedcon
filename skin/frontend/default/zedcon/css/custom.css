@@ -290,13 +290,6 @@ button.btn-row > span {
     font-size: 25px;
     background: #38b54b;
 }
-.desc-row {
-    font-size: 24px;
-    line-height: normal;
-    margin-bottom: 28px;
-    color: #ffffff;
-    text-transform: capitalize;
-}
 
 button.btn-row > span:after {
     background: #000;
@@ -310,6 +303,18 @@ button.btn-row > span:after {
     z-index: 0;
     background: none;
     background-size: contain;
+    max-height: 870px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 767px)
+{
+    .box-1 {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
 }
 .box-1 #bgndVideo {
     z-index: -1;
@@ -331,6 +336,45 @@ button.btn-row > span:after {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 991px) and (min-width: 868px) {
+    .title-row {
+        font-size: 4em;
+        line-height: 80px;
+    }
+}
+@media (max-width: 868px) {
+    .title-row {
+        font-size:2.7em;
+    }
+}
+@media (max-width: 650px) {
+    .title-row {
+        font-size:1.7em;
+    }
+}
+@media (max-width: 400px) {
+    .title-row {
+        font-size:1.2em;
+    }
+}
+.desc-row {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 28px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+@media (max-width: 868px) {
+    .desc-row {
+        font-size:1em;
+    }
+}
+@media (max-width: 400px) {
+    .desc-row {
+        font-size:0.8em;
+    }
+}
+
 
 .box-1 .video-container{
     position: absolute;
@@ -338,10 +382,25 @@ button.btn-row > span:after {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: 15% 0;
+    padding: 11% 0;
 
 }
+@media only screen and (max-width: 991px) {
+    .box-1 .video-container{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 9% 0;
 
+    }
+}
+@media (max-width: 868px) {
+    .box-1 .video-container{
+
+    }
+}
 /** footer template **/
 .footer-container
 {
