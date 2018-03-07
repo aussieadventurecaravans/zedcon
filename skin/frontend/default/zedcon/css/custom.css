@@ -210,7 +210,11 @@
     background: #000000;
 }
 
-
+.nav-custom-link.custom-link-about-us:hover a,
+.nav-custom-link.custom-link-contact-us:hover a
+{
+    color:#38b54b;
+}
 /** banner template ***/
 .camera_prev, .camera_next {
     text-align: center;

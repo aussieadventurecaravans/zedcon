@@ -64,8 +64,16 @@
                                     </ul>
                                 </li>
                             <?php endif; ?>
-                            
+
                             <li><?php echo $this->getChildHtml('block_header_nav_share'); ?></li>
+
+                            <!-- custom link to cms pages -->
+                            <li class="nav-custom-link level0 level-top custom-link-about-us">
+                                <a href="<?php echo Mage::getBaseUrl();?>about-us"><span><?php echo $this->__("About Us") ?></span></a>
+                            </li>
+                            <li class="nav-custom-link level0 level-top custom-link-contact-us">
+                                <a href="<?php echo Mage::getBaseUrl();?>contacts"><span><?php echo $this->__("Contact Us") ?></span></a>
+                            </li>
                      </ul>
                 </div>
             </div>
