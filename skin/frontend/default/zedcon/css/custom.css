@@ -159,6 +159,11 @@
     margin-bottom: 12px;
     font-weight: normal;
 }
+.grid-full .level1 .catagory-level1:hover{
+    color: #38b54b;
+    opacity: 0.6;
+ }
+
 
 .grid-full .catagory_children .catagory_children li.level2:hover > a,
 .grid-full .catagory_children .catagory_children li.level2.active > a {
