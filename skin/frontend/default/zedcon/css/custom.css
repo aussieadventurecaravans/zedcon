@@ -485,3 +485,37 @@ button.btn-row > span:after {
 .footer .list-icon li a:hover {
     color: #188028;
 }
+
+
+
+/** contact us template  **/
+.contact-left h3 {
+    font-size: 13px;
+    line-height: 16px;
+    color: #38b54b;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+#contactForm .buttons-set button.button
+{
+    background: #000;
+}
+
+#contactForm .buttons-set button.button:hover > span:after
+{
+    background:none repeat scroll #38b54b;
+}
+#contactForm .buttons-set p.required
+{
+    color: #38b54b;
+}
+.form-list label.required em
+{
+    color: #38b54b;
+}
+.contact-block h2, .contact-block .fieldset .legend
+{
+    color:#000;
+    border-bottom: 2px solid #38b54b;
+}
