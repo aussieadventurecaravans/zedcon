@@ -87,6 +87,18 @@ jQuery(document).ready(function(){
 			}
 		});
 
+
+    /**************************************************************** Swipe Menu Accordion *********************************************************************/
+    jQuery('.swipe-menu-wrapper .menu_swipe_list > h4 ').append('<span class="toggle"></span>');
+    jQuery('.swipe-menu-wrapper .menu_swipe_list > h4 ').on("click", function(event){
+        event.stopPropagation();
+        if (jQuery(this).find('span').attr('class') == 'toggle opened') { jQuery(this).find('span').removeClass('opened').parents('.menu_swipe_list').find('.menu_swipe_list_content').slideToggle(); }
+        else {
+            jQuery(this).find('span').addClass('opened').parents('.menu_swipe_list').find('.menu_swipe_list_content').slideToggle();
+        }
+    });
+
+
 	/******************************************************************** Header Buttons *********************************************************************/
 
 		jQuery('.header-button, .switch-show').not('.top-login').on("click", function(e){
@@ -122,7 +134,7 @@ jQuery(document).ready(function(){
 		}
 		function swipe_animate_false(){
 			jQuery('.swipe-control').removeClass('active');
-			jQuery('.swipe').stop(true).animate({'left':'-237px'},400);
+			jQuery('.swipe').stop(true).animate({'left':'-100%'},400);
 		}
 	    jQuery('.swipe-control').click(function(){
 	    	swipe_animate_true();
@@ -149,6 +161,7 @@ jQuery(document).ready(function(){
 		});
 
 	    jQuery('.swipe').outerHeight(jQuery(window).outerHeight());
+    	jQuery('.swipe').css('left','-100%');
 
 	    jQuery(window).resize(function() {
 	        jQuery('.swipe').outerHeight(jQuery(window).outerHeight());

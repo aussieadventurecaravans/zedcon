@@ -220,6 +220,114 @@
 {
     color:#38b54b;
 }
+
+/** Mobile Swife Menu **/
+.swipe {
+    display: block;
+    left: -237px;
+    overflow: hidden;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 25px;
+    height: 100%;
+    moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 6;
+    padding-bottom: 60px;
+}
+
+body.ps-static .top-icon-menu > div:hover, .top-icon-menu > div.active {
+    color: #38b54b;
+}
+.top-icon-menu, .swipe {
+    background-color: #000;
+    border-bottom: 3px solid #38b54b;
+}
+.top-icon-menu > div {
+    float: left;
+    border-right: none;
+    height: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+}
+.top-icon-menu .top-search {
+    float: right;
+    border-left: none;
+    border-right-width: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .swipe-menu-wrapper .menu_swipe_list {
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
+.swipe-menu-wrapper .menu_swipe_list > h4 {
+    position: relative;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #38b54b;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    padding: 10px 20px 11px;
+    border-bottom: 1px solid #232323;
+}
+.swipe-menu-wrapper .menu_swipe_list > h4 span.toggle {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 12px;
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.swipe-menu-wrapper  .menu_swipe_list_content
+{
+    padding: 10px 20px 11px;
+}
+@media only screen and (max-width: 767px){
+    .swipe-menu-wrapper  .menu_swipe_list_content
+    {
+        display: none;
+    }
+}
+.swipe-menu-wrapper  .menu_swipe_list_content li
+{
+    padding: 10px 20px 11px;
+}
+.swipe-menu-wrapper  .menu_swipe_list_content li:hover,
+.swipe-menu-wrapper  .menu_swipe_list_content li:active
+{
+    background-color: #444444;
+}
+.swipe-menu-wrapper  .menu_swipe_list_content li a
+{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    display: block;
+}
+.swipe-menu-wrapper  .menu_swipe_list_content li:hover a,
+.swipe-menu-wrapper  .menu_swipe_list_content li:active a
+{
+    color: #38b54b;
+}
 /** banner template ***/
 .camera_prev, .camera_next {
     text-align: center;

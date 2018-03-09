@@ -38,10 +38,15 @@
         <?php //echo $this->getChildHtml('footer_links') ?>
         <?php //echo $this->getChildHtml('cms_footer_links') ?>
         <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('cms_footer_links')->toHtml() ?>
-        <div class="footer-links-menu"> 
-            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHtml() ?>
-            <?php echo $this->getChildHtml('footer_links'); ?>
+       <!--<div class="footer-links-menu">
+            <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHtml() ?>
+            <?php //echo $this->getChildHtml('footer_links'); ?>
             <?php //echo $this->getLayout()->createBlock('core/template')->setTemplate('page/template/custum_link_header.phtml')->toHtml(); ?>
+        </div>-->
+        <div class="swipe-menu-wrapper">
+
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('mobile_swipe_list')->toHtml() ?>
+
         </div>
     </div>
 </div>
