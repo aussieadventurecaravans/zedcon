@@ -163,7 +163,11 @@
     color: #38b54b;
     opacity: 0.6;
  }
-
+.grid-full .level1 .catagory-level1:hover, .grid-full .level1.active .catagory-level1
+{
+    color: #38b54b;
+    opacity: 0.6;
+}
 
 .grid-full .catagory_children .catagory_children li.level2:hover > a,
 .grid-full .catagory_children .catagory_children li.level2.active > a {
@@ -708,4 +712,11 @@ button.btn-row > span:after {
     font-weight: 400;
     text-align: center;
     padding: 2px 22px;
+}
+
+
+/*** category template ***/
+.note-msg-empty-catalog {
+    background: url(../images/empty-catalog.png) no-repeat left top;
+    padding: 52px 30px 35px 150px;
 }
