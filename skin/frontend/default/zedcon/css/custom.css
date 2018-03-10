@@ -639,6 +639,12 @@ button.btn-row > span:after {
 
 /**** service page template    ***/
 
+.service-wrapper.container .row-cat li
+{
+    margin-bottom: 52px;
+}
+
+
 .service-wrapper.container
 {
     margin-top: 150px;
@@ -712,6 +718,17 @@ button.btn-row > span:after {
     font-weight: 400;
     text-align: center;
     padding: 2px 22px;
+}
+.service-wrapper.container div.col-xs-12{
+    margin-bottom: 60px;
+}
+.service-wrapper.container a.button.btn-row > span {
+    font-size: 25px;
+    background: #0e9622;
+    color: #fff;
+}
+.service-wrapper.container a.button.btn-row > span  {
+    padding: 26px 35px;
 }
 
 
