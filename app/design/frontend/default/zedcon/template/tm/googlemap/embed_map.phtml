@@ -64,7 +64,7 @@ if (Mage::getStoreConfig('googlemap/embed/active', Mage::app()->getStore())):
 		function tm_googlemap_embed_loadScript() {
 			var script = document.createElement("script");
 			script.type = "text/javascript";
-			script.src = "http://maps.googleapis.com/maps/api/js?v=3.9&key=<?php echo $tm_googlemap_embed_settings['api_key']; ?>&sensor=<?php echo $tm_googlemap_embed_settings['sensor']; ?>&callback=tm_googlemap_embed_initialize";
+			script.src = "https://maps.googleapis.com/maps/api/js?v=3.9&key=<?php echo $tm_googlemap_embed_settings['api_key']; ?>&sensor=<?php echo $tm_googlemap_embed_settings['sensor']; ?>&callback=tm_googlemap_embed_initialize";
 			document.body.appendChild(script);
 		}
 
