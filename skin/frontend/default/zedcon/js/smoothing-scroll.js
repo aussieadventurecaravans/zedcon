@@ -3,7 +3,7 @@ jQuery(window).load(function(){
         if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
             window.onmousewheel = document.onmousewheel = wheel;
 
-            var time = 330;
+            var time = 50;
             var distance = 100;
 
             function wheel(event) {
