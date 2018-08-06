@@ -737,3 +737,42 @@ button.btn-row > span:after {
     background: url(../images/empty-catalog.png) no-repeat left top;
     padding: 52px 30px 35px 150px;
 }
+
+
+/** CUSTOMIZE THE WHY ZEDCON, WARRANTY PAGE **/
+.why-zedcon-padd ul
+{
+    padding-bottom: 15px;
+}
+.why-zedcon-padd ul li {
+    list-style: none;
+    font-size: 12px;
+    font-style: italic;
+    color: #373737;
+    padding: 0 0 9px 0;
+}
+
+.why-zedcon-padd ul li:before {
+    content: "\f061";
+    font-size: 16px;
+    margin-right: 10px;
+
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    text-indent: 0 !important;
+}
+
+.why-zedcon-padd p
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #383737;
+    padding-bottom: 16px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: bold;
+    line-height: 1.1;
+}
