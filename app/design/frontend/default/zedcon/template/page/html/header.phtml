@@ -44,9 +44,14 @@
             <?php //echo $this->getLayout()->createBlock('core/template')->setTemplate('page/template/custum_link_header.phtml')->toHtml(); ?>
         </div>-->
         <div class="swipe-menu-wrapper">
-
-            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('mobile_swipe_list')->toHtml() ?>
-
+            <?php //render category  block ?>
+            <?php $navigation =  $this->getLayout()->createBlock('catalog/navigation');  ?>
+            <?php $_menu = $navigation->renderCategoriesMenuHtml(0,'menu_swipe_list', 'menu_swipe_list_content'); ?>
+            <ul class="category-nav">
+                <?php echo $_menu; ?>
+            </ul>
+            <?php //render cms block ?>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('mobile_swipe_list')->toHtml(); ?>
         </div>
     </div>
 </div>

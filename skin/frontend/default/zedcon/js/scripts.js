@@ -89,8 +89,10 @@ jQuery(document).ready(function(){
 
 
     /**************************************************************** Swipe Menu Accordion *********************************************************************/
-    jQuery('.swipe-menu-wrapper .menu_swipe_list > h4 ').append('<span class="toggle"></span>');
-    jQuery('.swipe-menu-wrapper .menu_swipe_list > h4 ').on("click", function(event){
+
+
+    jQuery('.swipe-menu-wrapper div.menu_swipe_list:not(.no-toggle) > h4 ').append('<span class="toggle"></span>');
+    jQuery('.swipe-menu-wrapper div.menu_swipe_list:not(.no-toggle) > h4 ').on("click", function(event){
         event.stopPropagation();
         if (jQuery(this).find('span').attr('class') == 'toggle opened') { jQuery(this).find('span').removeClass('opened').parents('.menu_swipe_list').find('.menu_swipe_list_content').slideToggle(); }
         else {
@@ -99,6 +101,28 @@ jQuery(document).ready(function(){
     });
 
 
+    jQuery('.swipe-menu-wrapper .category-nav .menu_swipe_list').each(function(){
+            if(jQuery(this).children('.menu_swipe_list_content').length != 0)
+            {
+
+                jQuery(this).children('a.menu_swipe_list').append('<span class="toggle"></span>');
+            }
+            else
+			{
+                jQuery(this).addClass('no-toggle');
+			}
+	});
+    jQuery('.swipe-menu-wrapper .category-nav .menu_swipe_list:not(.no-toggle) > a.menu_swipe_list').on("click", function(event){console.log('test');
+        event.stopPropagation();
+        event.preventDefault();
+        if (jQuery(this).find('span.toggle').attr('class') == 'toggle opened') {
+        	jQuery(this).find('span').removeClass('opened').parents('.menu_swipe_list').find('.menu_swipe_list_content').slideToggle();
+		}
+		else
+		{
+            jQuery(this).find('span.toggle').addClass('opened').parents('.menu_swipe_list').find('.menu_swipe_list_content').slideToggle();
+        }
+    });
 	/******************************************************************** Header Buttons *********************************************************************/
 
 		jQuery('.header-button, .switch-show').not('.top-login').on("click", function(e){

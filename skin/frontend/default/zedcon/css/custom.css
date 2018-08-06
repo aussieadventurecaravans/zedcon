@@ -280,7 +280,8 @@ body.ps-static .top-icon-menu > div:hover, .top-icon-menu > div.active {
         border: 0;
     }
 }
-.swipe-menu-wrapper .menu_swipe_list > h4 {
+.swipe-menu-wrapper .menu_swipe_list > h4,
+.swipe-menu-wrapper .menu_swipe_list > a.menu_swipe_list {
     position: relative;
     font-size: 20px;
     line-height: 26px;
@@ -290,8 +291,15 @@ body.ps-static .top-icon-menu > div:hover, .top-icon-menu > div.active {
     text-transform: capitalize;
     padding: 10px 20px 11px;
     border-bottom: 1px solid #232323;
+    display: inherit;
 }
-.swipe-menu-wrapper .menu_swipe_list > h4 span.toggle {
+.swipe-menu-wrapper .menu_swipe_list > h4 a{
+    color: #38b54b;
+}
+
+.swipe-menu-wrapper .menu_swipe_list > h4 span.toggle,
+.swipe-menu-wrapper .menu_swipe_list > a.menu_swipe_list span.toggle
+{
     position: absolute;
     cursor: pointer;
     right: 10px;
@@ -300,6 +308,7 @@ body.ps-static .top-icon-menu > div:hover, .top-icon-menu > div.active {
     text-align: center;
     font-size: 16px;
 }
+
 .swipe-menu-wrapper  .menu_swipe_list_content
 {
     padding: 10px 20px 11px;
