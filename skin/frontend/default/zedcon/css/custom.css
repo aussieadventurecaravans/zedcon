@@ -295,6 +295,11 @@ body.ps-static .top-icon-menu > div:hover, .top-icon-menu > div.active {
 }
 .swipe-menu-wrapper .menu_swipe_list > h4 a{
     color: #38b54b;
+    display: inherit;
+}
+.swipe-menu-wrapper .menu_swipe_list > h4:hover
+{
+    background-color: #444444;
 }
 
 .swipe-menu-wrapper .menu_swipe_list > h4 span.toggle,
