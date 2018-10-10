@@ -570,14 +570,47 @@ button.btn-row > span:after {
     text-transform: capitalize;
 }
 
-.footer .footer-col .tel {
+.footer .footer-col .tel:before
+{
+    font-family: FontAwesome;
+    content: "\f095";
+    font-size: 18px;
+    color: #e4e4e4;
+    line-height: 18px;
+    background: #000;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: 25px;
+    vertical-align: baseline;
+    width:0;height:0;
+}
+.footer .footer-col .mobile:before
+{
+    font-family: FontAwesome;
+    content: "\f10b";
+    font-size: 18px;
+    color: #e4e4e4;
+    line-height: 18px;
+    background: #000;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: 25px;
+    vertical-align: baseline;
+    width:0;height:0;
+}
+
+.footer .footer-col .tel,
+.footer .footer-col .mobile
+{
     display: block;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
     color: #fff;
     margin: 15px 0;
-    font-weight: bold;
+    font-weight: 300;
+
 }
 .footer .footer-col p:first-child {
     font-weight: bold;
